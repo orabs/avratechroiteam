@@ -99,24 +99,32 @@ class Worshiper():
 
             else:
                 raise ValueError("Id allreadey exist in the database")
-        if firstname:
-            database.execute("UPDATE worshipers SET firstname = \"{firstname}\"  Where id={id};".format(firstname=firstname,id=id))
-        if lastname:
-            database.execute("UPDATE worshipers SET lastname = {} WHERE  id={};".format(lastname,id))
-        if phone:
-            database.execute("UPDATE worshipers SET phone = {} WHERE id={};".format(phone,id))
-        if city:
-            database.execute("UPDATE worshipers SET city = {} WHERE  id={};".format(city,id))
-        if addres:
-            database.execute("UPDATE worshipers SET addres= {} WHERE  id={};".format(addres,id))
-        if mail:
-            database.execute("UPDATE worshipers SET mail = \"{mail}\" WHERE  id={id};".format(mail=mail,id=id))
-        if clan:
-            database.execute("UPDATE worshipers SET clan = {} WHERE  id={};".format(clan,id))
-        if father_name:
-            database.execute("UPDATE worshipers SET father_name = {} WHERE  id={};".format(father_name,id))
-        if lastaliya:
-            database.execute("UPDATE worshipers SET LastAliya= {} WHERE  id ={};".format(lastaliya,id))
+        id_exist = database.execute("select id from worshipers where id={}".format(id))
+        id_exist = id_exist.fetchone()
+
+        if id_exist:
+
+            if firstname:
+                database.execute("UPDATE worshipers SET firstname = \"{firstname}\"  Where id={id};".format(firstname=firstname,id=id))
+            if lastname:
+                database.execute("UPDATE worshipers SET lastname = {} WHERE  id={};".format(lastname,id))
+            if phone:
+                database.execute("UPDATE worshipers SET phone = {} WHERE id={};".format(phone,id))
+            if city:
+                database.execute("UPDATE worshipers SET city = {} WHERE  id={};".format(city,id))
+            if addres:
+                database.execute("UPDATE worshipers SET addres= {} WHERE  id={};".format(addres,id))
+            if mail:
+                database.execute("UPDATE worshipers SET mail = \"{mail}\" WHERE  id={id};".format(mail=mail,id=id))
+            if clan:
+                database.execute("UPDATE worshipers SET clan = {} WHERE  id={};".format(clan,id))
+            if father_name:
+                database.execute("UPDATE worshipers SET father_name = {} WHERE  id={};".format(father_name,id))
+            if lastaliya:
+                database.execute("UPDATE worshipers SET LastAliya= {} WHERE  id ={};".format(lastaliya,id))
+            else:
+                raise ValueError("Id not exist in the database")
+
         database.cursor()
         database.commit()
     @staticmethod
