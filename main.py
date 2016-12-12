@@ -6,17 +6,17 @@ from datetime import datetime
 
 
 class Worshiper():
-    # def __init__(self,id,firstname,lastname,phone,city,addres,mail,clan,father_name,lastaliya):
-    #     self.id=id
-    #     self.firstname=firstname
-    #     self.lastname=lastname
-    #     self.phone=phone
-    #     self.city=city
-    #     self.addres=addres
-    #     self.mail=mail
-    #     self.clan=clan
-    #     self.father_name=father_name
-    #     self.lastaliya=lastaliya
+    def __init__(self,id,firstname,lastname,phone,city,addres,mail,clan,father_name,lastaliya):
+        self.id=id
+        self.firstname=firstname
+        self.lastname=lastname
+        self.phone=phone
+        self.city=city
+        self.addres=addres
+        self.mail=mail
+        self.clan=clan
+        self.father_name=father_name
+        self.lastaliya=lastaliya
 
 
 
@@ -84,40 +84,41 @@ class Worshiper():
         database.commit()
 
     @staticmethod
-    def update_worshiper(new_id=None,old_id=None,old_firstname=None,new_firstname=None,old_lastname=None,new_lastname=None,new_phone=None,old_phone=None,new_city=None,old_city=None,new_addres=None,old_addres=None,new_mail=None,old_mail=None,new_clan=None,old_clan=None,new_father_name=None,old_father_name=None,new_lastaliya=None,old_lastliya=None):
+    def update_worshiper(old_id=None,new_id=None,id=None,firstname=None,lastname=None,phone=None,city=None,addres=None,mail=None,clan=None,father_name=None,lastaliya=None):
         database = sqlite3.connect('gabay')
         if old_id:
             new_id_exist=database.execute("select id from worshipers where id={}".format(new_id))
             new_id_exist=new_id_exist.fetchone()
             if not new_id_exist:
-                old_id_exist = database.execute("select id from worshipers where id={}".format(old_id))
+                old_id_exist = database.execute("select id from worshipers where id={}".format(id))
                 old_id_exist = old_id_exist.fetchone()
                 if old_id_exist:
-                    database.execute("UPDATE worshipers SET id = {} WHERE id ={};".format(new_id,old_id))
+                    database.execute("UPDATE worshipers SET id = {} WHERE id ={};".format(new_id,id))
                 else:
                     raise ValueError("Id not exist in the database")
 
             else:
                 raise ValueError("Id allreadey exist in the database")
-        if old_firstname:
-            database.execute("UPDATE worshipers SET firstname = {} WHERE firstname ={};".format(new_firstname,old_firstname))
-        if old_lastname:
-            database.execute("UPDATE worshipers SET id = {} WHERE id ={};".format(new_lastname,old_lastname))
-        if old_phone:
-            database.execute("UPDATE worshipers SET id = {} WHERE id ={};".format(new_phone,old_phone))
-        if old_city:
-            database.execute("UPDATE worshipers SET id = {} WHERE id ={};".format(new_city,old_city))
-        if old_addres:
-            database.execute("UPDATE worshipers SET id = {} WHERE id ={};".format(new_addres,old_addres))
-        if old_mail:
-            database.execute("UPDATE worshipers SET id = {} WHERE id ={};".format(new_mail,old_mail))
-        if old_clan:
-            database.execute("UPDATE worshipers SET id = {} WHERE id ={};".format(new_clan,old_clan))
-        if old_father_name:
-            database.execute("UPDATE worshipers SET id = {} WHERE id ={};".format(new_father_name,old_father_name))
-        if old_lastliya:
-            database.execute("UPDATE worshipers SET id = {} WHERE id ={};".format(new_lastaliya,old_lastliya))
-
+        if firstname:
+            database.execute("UPDATE worshipers SET firstname = \"{firstname}\"  Where id={id};".format(firstname=firstname,id=id))
+        if lastname:
+            database.execute("UPDATE worshipers SET lastname = {} WHERE  id={};".format(lastname,id))
+        if phone:
+            database.execute("UPDATE worshipers SET phone = {} WHERE id={};".format(phone,id))
+        if city:
+            database.execute("UPDATE worshipers SET city = {} WHERE  id={};".format(city,id))
+        if addres:
+            database.execute("UPDATE worshipers SET addres= {} WHERE  id={};".format(addres,id))
+        if mail:
+            database.execute("UPDATE worshipers SET mail = \"{mail}\" WHERE  id={id};".format(mail=mail,id=id))
+        if clan:
+            database.execute("UPDATE worshipers SET clan = {} WHERE  id={};".format(clan,id))
+        if father_name:
+            database.execute("UPDATE worshipers SET father_name = {} WHERE  id={};".format(father_name,id))
+        if lastaliya:
+            database.execute("UPDATE worshipers SET LastAliya= {} WHERE  id ={};".format(lastaliya,id))
+        database.cursor()
+        database.commit()
     @staticmethod
     def add_worshiper(new_firstname=None,new_lastname=None,new_phone=None,new_city=None,new_addres=None,new_mail=None,new_clan=None,new_father_name=None,new_lastaliya=None):
         database = sqlite3.connect('gabay')
@@ -132,4 +133,4 @@ class Worshiper():
 #
 # Worshiper.add_worshiper(new_firstname="orly",new_lastname="arbes",new_city="jeruslam")
 
-Worshiper.delete_worshiper_by_id(1002)
+Worshiper.update_worshiper(id=1000,firstname="rami")

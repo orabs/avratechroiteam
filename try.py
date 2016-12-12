@@ -21,10 +21,8 @@ monthinhebrew={1:"תשרי",2:"חשון",3:"כסלו",4:"טבת",5:"שבט",6:"�
 #    app.run(debug = True)
 
 
-a=datetime.today()
-print(a)
-
-# b=datetime.date.strd(a,"%d-%m-%Y")
-a="5-10-1988"
-b=datetime.strptime(a,"%d-%m-%Y")
-print(b)
+import sqlite3
+database = sqlite3.connect('gabay')
+database.execute("UPDATE worshipers SET mail = \"{mail}\" WHERE  id={id};".format(mail="yochai@gmail.com",id=225))
+database.cursor()
+database.commit()
