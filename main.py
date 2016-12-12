@@ -126,7 +126,7 @@ class Worshiper():
                             new_lastname,new_phone,new_city, new_addres, new_mail, new_clan,new_father_name, new_lastaliya))
         database.cursor()
         database.commit()
-
+#hello world
 # update_worshiper(old_id=1000,new_id=999)
 # Worshiper.add_worshiper(new_addres="blabla")
 #
