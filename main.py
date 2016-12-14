@@ -37,16 +37,10 @@ class Worshiper():
     def select_next_readers_clan(worshiper=5,
                                  shevet="Israel"):  # get days and give list of tuple of worshipers ('defult =30 days)
         database = sqlite3.connect('gabay')
-        data = database.execute(
-            "select * from worshipers where clan=\"{}\" order by LastAliya DESC limit {}".format(shevet, worshiper))
-        reslst = []
-
+        data = database.execute("select * from worshipers where clan=\"{}\" order by LastAliya DESC limit {}".format(shevet, worshiper))
         datalst = data.fetchall()
 
-        for worshiper in datalst:
-            reslst.append(worshiper)
-
-        return reslst
+        return datalst
 
     @staticmethod
     def add_worshiper_lst(lst):
@@ -99,7 +93,8 @@ class Worshiper():
         id_exist = database.execute("select id from worshipers where id={}".format(id))
         id_exist = id_exist.fetchone()
 
-        if id_exist:
+
+        if id_exist[0]:
 
             if firstname:
                 database.execute(
@@ -114,15 +109,15 @@ class Worshiper():
             if addres:
                 database.execute("UPDATE worshipers SET addres= {} WHERE  id={};".format(addres, id))
             if mail:
-                database.execute("UPDATE worshipers SET mail = \"{mail}\" WHERE  id={id};".format(mail=mail, id=id))
+                database.execute("UPDATE worshipers SET mail = '{mail}' WHERE  id={id};".format(mail=mail, id=id))
             if clan:
                 database.execute("UPDATE worshipers SET clan = {} WHERE  id={};".format(clan, id))
             if father_name:
                 database.execute("UPDATE worshipers SET father_name = {} WHERE  id={};".format(father_name, id))
             if lastaliya:
                 database.execute("UPDATE worshipers SET LastAliya= {} WHERE  id ={};".format(lastaliya, id))
-            else:
-                raise ValueError("Id not exist in the database")
+        else:
+            raise ValueError("Id not exist in the database")
 
         database.cursor()
         database.commit()
@@ -132,7 +127,7 @@ class Worshiper():
                       new_mail=None, new_clan=None, new_father_name=None, new_lastaliya=None):
         database = sqlite3.connect('gabay')
         database.execute("INSERT INTO worshipers (firstname,lastname,phone,city,addres,mail,clan,father_name,LastAliya)\
-                VALUES (\"{}\",\"{}\",\"{}\",\"{}\",\"{}\",\"{}\",\"{}\",\"{}\",\"{}\");".format(new_firstname, \
+                VALUES ('{}','{}','{}','{}','{}','{}','{}','{}','{}');".format(new_firstname, \
                                                                                                  new_lastname,
                                                                                                  new_phone, new_city,
                                                                                                  new_addres, new_mail,
@@ -148,5 +143,8 @@ class Worshiper():
 # Worshiper.add_worshiper(new_addres="blabla")
 #
 # Worshiper.add_worshiper(new_firstname="orly",new_lastname="arbes",new_city="jeruslam")
+database = sqlite3.connect('gabay')
+data=database.execute("PRAGMA table_info(table_name)")
+qu1=data.fetchall()
 
-Worshiper.update_worshiper(id=1000, firstname="rami")
+print(qu1)

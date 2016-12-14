@@ -1,0 +1,30 @@
+<!doctype html>
+<head>
+    <title>Woelcome to Gabay</title>
+
+</head>
+
+<body bgcolor="grey">
+<center><h1><Font color="yellow">{{ table }}</h1>
+
+
+    </font></center>
+
+<br>
+
+<ul>
+
+    <table border="2" align="center">
+        {% for line in qu1 %}
+             <tr>
+                 {% for col in line %}
+                         <td>{{ col }}</td>
+                 {% endfor %}
+             </tr>
+         {% endfor  %}
+
+    </table>
+
+
+</body>
+<br>
