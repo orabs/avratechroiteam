@@ -148,4 +148,4 @@ data=database.execute("PRAGMA table_info(table_name)")
 qu1=data.fetchall()
 
 print(qu1)
-#blabla
+#aineoanhetaet
