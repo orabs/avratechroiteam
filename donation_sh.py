@@ -1,22 +1,31 @@
 import sqlite3
 from datetime import datetime
 
-def add_donation(worshiper,donation):
+
+def add_donation(worshiper,donationdate,donation):
+    donationdate = datetime.date(donationdate)
     examination = sqlite3.connect('gabay')
-    re = examination.execute('SELECT id  FROM worshipers')
-    for i in re:
-        if worshiper  == i[0]: #or donationdate is not datetime:
-            examination.execute('INSERT INTO donations (worshiper, donation) VALUES (\"{}\",\"{}\")'.format(worshiper,donation))
-            # examination.cursor()
-            examination.commit()
-    raise ValueError("Id not exist in the database")
+    l = []
+    for i in examination.execute('SELECT id FROM worshipers'):
+        l.append(i[0])
+    if worshiper in l:
+        examination.execute('INSERT INTO donations (worshiper,donationdate, donation) VALUES (\"{}\",\"{}\",\"{}\")'.format(worshiper, donationdate, donation))
+        examination.commit()
+    else:
+        raise ValueError("Id not exist in the database")
 
-# # a = datetime(1988,12,12)
-# # add_donation(224,'50')
-#
-# examination = sqlite3.connect('gabay')
-# re = examination.execute('INSERT INTO donations (worshiper, donation) VALUES (\"{}\",\"{}\")'.format(224,100))
-# re=re.fetchall()
+print(add_donation(worshiper=226, donationdate=datetime(day=5,month=6,year=1987), donation='100'))
 
-print(add_donation(224,'50'))
-gaga
+def delete_donation(worshiper):
+    examination = sqlite3.connect('gabay')
+    l = []
+    for i in examination.execute('SELECT worshiper FROM donations'):
+        l.append(i[0])
+    if str(worshiper) in l:
+        examination.execute("DELETE FROM donations WHERE worshiper=\"{}\"".format(worshiper))
+        examination.cursor()
+        examination.commit()
+
+
+
+# delete_donation(225)
