@@ -1,21 +1,20 @@
 <!doctype html>
 <head>
-    <title>Woelcome to Gabay</title>
+    <title>Welcome to Gabay</title>
 
 </head>
 
 <body bgcolor="grey">
-<center><h1><Font color="yellow">{{ table }}</h1>
-
-
-    </font></center>
+<center><h1><Font color="yellow">{{ table }}</font></h1></center>
 
 <br>
 
 <ul>
 
     <table border="2" align="center">
+
         {% for line in qu1 %}
+
              <tr>
                  {% for col in line %}
                          <td>{{ col }}</td>
@@ -25,6 +24,9 @@
 
     </table>
 
-
+</ul>
+          <form action = "http://localhost:5000/logout" method = "POST" >
+              <p><input type = "submit" value = "Logout" /></p>
 </body>
-<br>
+
+      </form>

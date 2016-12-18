@@ -34,8 +34,7 @@ class Worshiper():
         return reslst
 
     @staticmethod
-    def select_next_readers_clan(worshiper=5,
-                                 shevet="Israel"):  # get days and give list of tuple of worshipers ('defult =30 days)
+    def select_next_readers_clan(worshiper=5,shevet="Israel"):  # get days and give list of tuple of worshipers ('defult =30 days)
         database = sqlite3.connect('gabay')
         data = database.execute("select * from worshipers where clan=\"{}\" order by LastAliya DESC limit {}".format(shevet, worshiper))
         datalst = data.fetchall()
@@ -46,25 +45,24 @@ class Worshiper():
     def add_worshiper_lst(lst):
         database = sqlite3.connect('gabay')
 
-        for worshiper in lst:
-            firstname = worshiper[1]
-            lastname = worshiper[2]
-            phone = worshiper[3]
-            city = worshiper[4]
-            addres = worshiper[5]
-            mail = worshiper[6]
-            clan = worshiper[7]
-            father_name = worshiper[8]
-            lastaliya = worshiper[9]
+        firstname = lst[1]
+        lastname = lst[2]
+        phone = lst[3]
+        city = lst[4]
+        addres = lst[5]
+        mail = lst[6]
+        clan = lst[7]
+        father_name = lst[8]
+        lastaliya = lst[9]
 
-            database.execute("INSERT INTO worshipers (firstname,lastname,phone,city,addres,mail,clan,father_name,LastAliya)\
+        database.execute("INSERT INTO worshipers (firstname,lastname,phone,city,addres,mail,clan,father_name,LastAliya)\
              VALUES (\"{}\",\"{}\",\"{}\",\"{}\",\"{}\",\"{}\",\"{}\",\"{}\",\"{}\");".format(firstname, lastname,
                                                                                               phone, city, addres, mail,
                                                                                               clan, father_name,
                                                                                               lastaliya))
 
-            database.cursor()
-            database.commit()
+        database.cursor()
+        database.commit()
 
     @staticmethod
     def delete_worshiper_by_id(id):
@@ -143,9 +141,23 @@ class Worshiper():
 # Worshiper.add_worshiper(new_addres="blabla")
 #
 # Worshiper.add_worshiper(new_firstname="orly",new_lastname="arbes",new_city="jeruslam")
-database = sqlite3.connect('gabay')
-data=database.execute("PRAGMA table_info(table_name)")
-qu1=data.fetchall()
-
-print(qu1)
+# database = sqlite3.connect('gabay')
+# data=database.execute("SELECT name FROM sqlite_master WHERE type='table';")
+# qu1=data.fetchall()
+# qu1.pop(0)
+# print(qu1[0][0])
 #aineoanhetaet
+
+#
+# cursor = database.execute('select * from worshipers')
+# data=cursor.fetchall()
+#
+# tup=tuple()
+# cols = list(map(lambda x: x[0], cursor.description))
+# tup=tuple(cols)
+# print(tup)
+#
+# data.insert(0,tup)
+# print(data)
+#
+#
