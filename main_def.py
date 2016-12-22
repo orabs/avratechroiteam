@@ -99,21 +99,21 @@ class Worshiper():
                     "UPDATE worshipers SET firstname = \"{firstname}\"  Where id={id};".format(firstname=firstname,
                                                                                                id=id))
             if lastname:
-                database.execute("UPDATE worshipers SET lastname = {} WHERE  id={};".format(lastname, id))
+                database.execute("UPDATE worshipers SET lastname = '{lastname}' WHERE  id=id{};".format(lastname=lastname,id= id))
             if phone:
-                database.execute("UPDATE worshipers SET phone = {} WHERE id={};".format(phone, id))
+                database.execute("UPDATE worshipers SET phone = '{phone}' WHERE id={id};".format(phone=phone, id=id))
             if city:
-                database.execute("UPDATE worshipers SET city = {} WHERE  id={};".format(city, id))
+                database.execute("UPDATE worshipers SET city = '{city}' WHERE  id={id};".format(city=city, id=id))
             if addres:
-                database.execute("UPDATE worshipers SET addres= {} WHERE  id={};".format(addres, id))
+                database.execute("UPDATE worshipers SET addres= '{addres}' WHERE  id={id};".format(addres=addres,id= id))
             if mail:
                 database.execute("UPDATE worshipers SET mail = '{mail}' WHERE  id={id};".format(mail=mail, id=id))
             if clan:
-                database.execute("UPDATE worshipers SET clan = {} WHERE  id={};".format(clan, id))
+                database.execute("UPDATE worshipers SET clan = '{clan}' WHERE  id={id};".format(clan=clan,id= id))
             if father_name:
-                database.execute("UPDATE worshipers SET father_name = {} WHERE  id={};".format(father_name, id))
+                database.execute("UPDATE worshipers SET father_name = '{father_name}' WHERE  id={id};".format(father_name=father_name,id= id))
             if lastaliya:
-                database.execute("UPDATE worshipers SET LastAliya= {} WHERE  id ={};".format(lastaliya, id))
+                database.execute("UPDATE worshipers SET LastAliya= '{lastaliya}' WHERE  id ={id};".format(lastaliya=lastaliya,id=id))
         else:
             raise ValueError("Id not exist in the database")
 
@@ -161,3 +161,5 @@ class Worshiper():
 # print(data)
 #
 #
+
+# Worshiper.update_worshiper(id=608044,lastaliya="17/10/2016")
