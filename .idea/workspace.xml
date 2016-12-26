@@ -1,13 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7936e41-5a7c-4783-b3b5-cc3f5070dedf" name="Default" comment="ALCHEMY ADDED AND FLASK (LOGIN,AD MORE)">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/home.html" afterPath="" />
+    <list default="true" id="e7936e41-5a7c-4783-b3b5-cc3f5070dedf" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gabay2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/midnight/images/img01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/midnight/images/img02.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/midnight/images/img03.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/midnight/images/img04.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/midnight/images/img05.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/midnight/images/img06.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/midnight/images/img07.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/midnight/images/jerusalem.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/midnight/images/kotel.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/down-arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/img03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/jerusalem.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/kotel.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/pic01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/pic02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/pic03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/slide01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/slide02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/slide03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/slide04.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/slide05.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jerusalem.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/kotel.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/pic01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/pic02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/pic03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/preview.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/slide01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/slide02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/slide03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/slide04.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/slide05.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/gabay" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/images/img03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/images/jerusalem.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/images/kotel.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/images/pic01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/images/pic02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/images/pic03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/images/slide01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/images/slide02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/images/slide03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/images/slide04.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/images/slide05.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GGGG.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aliyot_calc.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/astro.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar_util.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar_util.py.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/holidays.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jewish_ex.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/midnight/default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/midnight/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/midnight/license.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/requirments.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/DateConvert.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/DateConvert.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/form_style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/heCalendar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/heCalendar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/heDate (1).js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/heDate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/heDate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery (1).js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery.dropotron-1.0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery.slidertron-1.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/license.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/menu.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/menu_full_url.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/style (1).css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/table.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/table.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/add_aliya.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/add_donation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/add_event.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/add_niftar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/add_yorzait.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/delete_aliya.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/delete_donation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/delete_event.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/delete_niftar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/delete_worshiper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/delete_yorzait.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/indexafterlogin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/jewish_calc.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/logout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/next_aliyot_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/next_aliyot_view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/tables.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/update_worshiper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/worshipers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trysomethong.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gabay" afterPath="$PROJECT_DIR$/gabay" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskgabay.py" afterPath="$PROJECT_DIR$/flaskgabay.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main_def.py" afterPath="$PROJECT_DIR$/main_def.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql_alchemy_gabay.py" afterPath="$PROJECT_DIR$/sql_alchemy_gabay.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +130,8 @@
       <file leaf-file-name="sql_alchemy_gabay.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sql_alchemy_gabay.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
-              <caret line="148" column="10" selection-start-line="148" selection-start-column="10" selection-end-line="148" selection-end-column="10" />
+            <state relative-caret-position="538">
+              <caret line="221" column="0" selection-start-line="221" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -38,51 +139,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="worshipers.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/worshipers.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="81" column="66" selection-start-line="81" selection-start-column="66" selection-end-line="81" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="delete_worshiper.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/delete_worshiper.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="143" selection-end-column="81" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="indexafterlogin.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/indexafterlogin.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="53" column="58" selection-start-line="53" selection-start-column="58" selection-end-line="53" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="flaskgabay.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flaskgabay.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aliyot_calc.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aliyot_calc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="470">
+              <caret line="195" column="12" selection-start-line="195" selection-start-column="12" selection-end-line="195" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="next_aliyot_form.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/next_aliyot_form.html">
+      <file leaf-file-name="codecs.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Python34/Lib/codecs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="123" column="81" selection-start-line="123" selection-start-column="81" selection-end-line="123" selection-end-column="81" />
+            <state relative-caret-position="110">
+              <caret line="308" column="0" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -91,11 +174,61 @@
       <file leaf-file-name="jewish_calc.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/jewish_calc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="266" />
+            <state relative-caret-position="119">
+              <caret line="8" column="10" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <marker date="1482703179382" expanded="false" signature="159:162" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delete_event.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/delete_event.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3502">
+              <caret line="206" column="42" selection-start-line="206" selection-start-column="42" selection-end-line="206" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delete_aliya.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/delete_aliya.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3536">
+              <caret line="208" column="44" selection-start-line="208" selection-start-column="44" selection-end-line="208" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_event.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/add_event.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3349">
+              <caret line="197" column="39" selection-start-line="197" selection-start-column="36" selection-end-line="197" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_aliya.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/add_aliya.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="205" column="22" selection-start-line="205" selection-start-column="22" selection-end-line="205" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indexafterlogin.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/indexafterlogin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="478">
+              <caret line="219" column="0" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -123,6 +256,7 @@
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_COMMON_BRANCH" value="master" />
     <option name="PUSH_TAGS">
       <GitPushTagMode>
         <option name="argument" value="--follow-tags" />
@@ -133,23 +267,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/selet_next_readers_clan.py" />
-        <option value="$PROJECT_DIR$/../MyProject/tepmlates/home.html" />
-        <option value="$PROJECT_DIR$/../MyProject/tepmlates/hello.html" />
-        <option value="$PROJECT_DIR$/../MyProject/tepmlates/peewee_first_app.py" />
-        <option value="$PROJECT_DIR$/../MyProject/marquee.py" />
-        <option value="$PROJECT_DIR$/../MyProject/templates/hello.html" />
-        <option value="$PROJECT_DIR$/../MyProject/BasicRoute.py" />
-        <option value="$PROJECT_DIR$/../MyProject/templates/static/style.css" />
-        <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/templates/result" />
-        <option value="$PROJECT_DIR$/templates/student.html" />
-        <option value="$PROJECT_DIR$/notihng.py" />
-        <option value="$PROJECT_DIR$/templates/worshipers - עותק.html" />
-        <option value="$PROJECT_DIR$/templates/adad.html" />
-        <option value="$PROJECT_DIR$/try.py" />
-        <option value="$PROJECT_DIR$/templates/תיקיה חדשה (2)/index.html" />
-        <option value="$PROJECT_DIR$/templates/logout.html" />
         <option value="$PROJECT_DIR$/templates/result.html" />
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/sql_alchemy.py" />
@@ -172,18 +289,35 @@
         <option value="$PROJECT_DIR$/../MyProject/work.py" />
         <option value="$PROJECT_DIR$/trysomethong.py" />
         <option value="$USER_HOME$/Desktop/new/index.html" />
-        <option value="$PROJECT_DIR$/templates/tables.html" />
-        <option value="$PROJECT_DIR$/templates/delete_worshiper.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$USER_HOME$/Desktop/templatemo_441_volton/index.html" />
-        <option value="$PROJECT_DIR$/templates/indexafterlogin.html" />
+        <option value="$USER_HOME$/Desktop/python_date_utils-1.0/setup.py" />
+        <option value="$USER_HOME$/Desktop/python_date_utils-1.0/date_utils/calendar_util.py" />
+        <option value="C:/Python34/Lib/python_date_utils-1.0/setup.py" />
+        <option value="$USER_HOME$/Desktop/python_date_utils-1.0/date_utils/holidays.py" />
+        <option value="$PROJECT_DIR$/jewish_ex.py" />
+        <option value="$PROJECT_DIR$/templates/add_aliya.html" />
+        <option value="$PROJECT_DIR$/templates/tables.html" />
         <option value="$PROJECT_DIR$/templates/worshipers.html" />
-        <option value="$PROJECT_DIR$/templates/next_aliyot_view.html" />
-        <option value="$PROJECT_DIR$/templates/jewish_calc.py" />
+        <option value="$PROJECT_DIR$/templates/delete_worshiper.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/sql_alchemy_gabay.py" />
+        <option value="$PROJECT_DIR$/templates/add_donation.html" />
+        <option value="$PROJECT_DIR$/templates/add_niftar.html" />
+        <option value="$PROJECT_DIR$/templates/add_yorzait.html" />
+        <option value="$PROJECT_DIR$/templates/delete_donation.html" />
+        <option value="$PROJECT_DIR$/templates/delete_niftar.html" />
+        <option value="$PROJECT_DIR$/templates/delete_yorzait.html" />
+        <option value="$PROJECT_DIR$/templates/update_worshiper.html" />
         <option value="$PROJECT_DIR$/templates/next_aliyot_form.html" />
+        <option value="$PROJECT_DIR$/templates/next_aliyot_view.html" />
+        <option value="$PROJECT_DIR$/templates/add_event.html" />
+        <option value="$PROJECT_DIR$/templates/indexafterlogin.html" />
+        <option value="$PROJECT_DIR$/templates/delete_event.html" />
+        <option value="$PROJECT_DIR$/templates/delete_aliya.html" />
+        <option value="$PROJECT_DIR$/templates/jewish_calc.py" />
         <option value="$PROJECT_DIR$/flaskgabay.py" />
+        <option value="$PROJECT_DIR$/sql_alchemy_gabay.py" />
+        <option value="$PROJECT_DIR$/aliyot_calc.py" />
       </list>
     </option>
   </component>
@@ -218,7 +352,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -251,28 +385,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FinalProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FinalProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
         <option name="show-excluded-files" value="false" />
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -291,7 +407,7 @@
       <recent name="C:\Users\User\Desktop" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.sql_alchemy_gabay">
+  <component name="RunManager" selected="Python.flaskgabay">
     <configuration default="false" name="flaskgabay" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -326,24 +442,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="work" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../MyProject" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="MyProject" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../MyProject/work.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="trysomethong" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="jewish_ex" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -355,24 +454,41 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="FinalProject" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trysomethong.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jewish_ex.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="jewish_calc" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="setup (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/templates" />
+      <option name="WORKING_DIRECTORY" value="C:/Python34/Lib/python_date_utils-1.0" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="FinalProject" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/templates/jewish_calc.py" />
+      <option name="SCRIPT_NAME" value="C:/Python34/Lib/python_date_utils-1.0/setup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="aliyot_calc" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FinalProject" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aliyot_calc.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -514,17 +630,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.flaskgabay" />
       <item index="1" class="java.lang.String" itemvalue="Python.sql_alchemy_gabay" />
-      <item index="2" class="java.lang.String" itemvalue="Python.work" />
-      <item index="3" class="java.lang.String" itemvalue="Python.trysomethong" />
-      <item index="4" class="java.lang.String" itemvalue="Python.jewish_calc" />
+      <item index="2" class="java.lang.String" itemvalue="Python.jewish_ex" />
+      <item index="3" class="java.lang.String" itemvalue="Python.setup (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.aliyot_calc" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.flaskgabay" />
-        <item index="1" class="java.lang.String" itemvalue="Python.sql_alchemy_gabay" />
-        <item index="2" class="java.lang.String" itemvalue="Python.jewish_calc" />
-        <item index="3" class="java.lang.String" itemvalue="Python.trysomethong" />
-        <item index="4" class="java.lang.String" itemvalue="Python.work" />
+        <item index="1" class="java.lang.String" itemvalue="Python.aliyot_calc" />
+        <item index="2" class="java.lang.String" itemvalue="Python.sql_alchemy_gabay" />
+        <item index="3" class="java.lang.String" itemvalue="Python.jewish_ex" />
+        <item index="4" class="java.lang.String" itemvalue="Python.setup (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -606,7 +722,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482060982833</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="ALCHEMY ADDED AND FLASK (LOGIN,AD MORE)">
+      <created>1482420802376</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1482420802376</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -622,22 +745,22 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1563981" sideWeight="0.48333332" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15534492" sideWeight="0.48333332" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46996465" sideWeight="0.37887213" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.37843865" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.49815693" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30777538" sideWeight="0.7" order="2" side_tool="false" content_ui="tabs" x="-9" y="512" width="1349" height="216" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18790497" sideWeight="0.7" order="2" side_tool="false" content_ui="tabs" x="-9" y="512" width="1349" height="216" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936803" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28725702" sideWeight="0.6211279" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28664497" sideWeight="0.6211279" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14481306" sideWeight="0.51666665" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39416847" sideWeight="0.49394417" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39308855" sideWeight="0.49394417" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -703,6 +826,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/aliyot_calc.py</url>
+          <line>140</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/aliyot_calc.py</url>
+          <line>141</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -710,60 +845,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="25" />
+      <option name="time" value="37" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/תיקיה חדשה (2)/index.html" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/sqlalchemy/util/_collections.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="989" column="41" selection-start-line="989" selection-start-column="41" selection-end-line="989" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/flask_sqlalchemy/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="787" column="55" selection-start-line="787" selection-start-column="55" selection-end-line="787" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/logout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql_alchemy.py" />
-    <entry file="file://$PROJECT_DIR$/templates/afterlogin.html" />
-    <entry file="file://$PROJECT_DIR$/midnight/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="386" column="0" selection-start-line="386" selection-start-column="0" selection-end-line="386" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home.html" />
-    <entry file="file://$PROJECT_DIR$/midnight/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/result.html" />
-    <entry file="file://$PROJECT_DIR$/new/style.css" />
-    <entry file="file://$PROJECT_DIR$/new/index.html" />
-    <entry file="file://$PROJECT_DIR$/templates/תיקיה חדשה/home.html" />
-    <entry file="file://$PROJECT_DIR$/templates/תיקיה חדשה/index.html" />
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python34/site-packages/flask_sqlalchemy/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/../FinalProject - עותק/sql_alchemy_gabay.py" />
-    <entry file="file://$PROJECT_DIR$/../FinalProject - עותק (2)/flaskgabay.py" />
-    <entry file="file://$PROJECT_DIR$/templates/flaskgabay2.py" />
-    <entry file="file://$PROJECT_DIR$/flaskgabay2.py" />
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -795,13 +881,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/delete_worshiper (2).html" />
     <entry file="file://$PROJECT_DIR$/templates/deleteworshiper.html" />
-    <entry file="file://$PROJECT_DIR$/templates/_ delete_worshiper old.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="17" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/_ delete_worshiper old.html" />
     <entry file="file://$PROJECT_DIR$/static/table.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
@@ -860,121 +940,226 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/tables.html">
+    <entry file="file://$PROJECT_DIR$/templates/add_worshiper.html" />
+    <entry file="file://$PROJECT_DIR$/templates/delete_worshiper2.html" />
+    <entry file="file://$PROJECT_DIR$/templates/adad.html" />
+    <entry file="file://$USER_HOME$/Desktop/templatemo_441_volton/index.html" />
+    <entry file="file://$USER_HOME$/Desktop/python_date_utils-1.0/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="721">
-          <caret line="137" column="7" selection-start-line="137" selection-start-column="7" selection-end-line="137" selection-end-column="7" />
-          <folding>
-            <element signature="n#form#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#body#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/add_worshiper.html">
+    <entry file="file://C:/Python34/Lib/python_date_utils-1.0/date_utils/holidays.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="8" selection-end-column="63" />
-          <folding />
+        <state relative-caret-position="170">
+          <caret line="84" column="35" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/delete_worshiper2.html">
+    <entry file="file://C:/Python34/Lib/python_date_utils-1.0/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="221">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/adad.html">
+    <entry file="file://$USER_HOME$/Desktop/python_date_utils-1.0/date_utils/calendar_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11985">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/python_date_utils-1.0/date_utils/holidays.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="392" column="19" selection-start-line="392" selection-start-column="13" selection-end-line="392" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jewish_ex.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="61" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="61" />
-          <folding />
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/templatemo_441_volton/index.html">
+    <entry file="file://$PROJECT_DIR$/templates/tables.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="97" column="76" selection-start-line="97" selection-start-column="76" selection-end-line="97" selection-end-column="76" />
-          <folding />
+        <state relative-caret-position="349">
+          <caret line="203" column="13" selection-start-line="203" selection-start-column="13" selection-end-line="203" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/worshipers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="184" column="13" selection-start-line="184" selection-start-column="13" selection-end-line="184" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="54" column="58" selection-start-line="54" selection-start-column="58" selection-end-line="54" selection-end-column="58" />
+        <state relative-caret-position="349">
+          <caret line="183" column="13" selection-start-line="183" selection-start-column="13" selection-end-line="183" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/add_donation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="184" column="13" selection-start-line="184" selection-start-column="13" selection-end-line="184" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/add_niftar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="184" column="13" selection-start-line="184" selection-start-column="13" selection-end-line="184" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/add_yorzait.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="184" column="13" selection-start-line="184" selection-start-column="13" selection-end-line="184" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/delete_donation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="187" column="13" selection-start-line="187" selection-start-column="13" selection-end-line="187" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/delete_niftar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="187" column="13" selection-start-line="187" selection-start-column="13" selection-end-line="187" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/delete_worshiper.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="187" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/delete_yorzait.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="187" column="13" selection-start-line="187" selection-start-column="13" selection-end-line="187" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/update_worshiper.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="184" column="13" selection-start-line="184" selection-start-column="13" selection-end-line="184" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/next_aliyot_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="186" column="13" selection-start-line="186" selection-start-column="13" selection-end-line="186" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/next_aliyot_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="198" column="13" selection-start-line="198" selection-start-column="13" selection-end-line="198" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/add_event.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3349">
+          <caret line="197" column="39" selection-start-line="197" selection-start-column="36" selection-end-line="197" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/delete_event.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3502">
+          <caret line="206" column="42" selection-start-line="206" selection-start-column="42" selection-end-line="206" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/delete_aliya.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3536">
+          <caret line="208" column="44" selection-start-line="208" selection-start-column="44" selection-end-line="208" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/jewish_calc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="266" />
+        <state relative-caret-position="119">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1482703179382" expanded="false" signature="159:162" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python34/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="308" column="0" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sql_alchemy_gabay.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="148" column="10" selection-start-line="148" selection-start-column="10" selection-end-line="148" selection-end-column="10" />
+        <state relative-caret-position="538">
+          <caret line="221" column="0" selection-start-line="221" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/next_aliyot_view.html">
+    <entry file="file://$PROJECT_DIR$/templates/add_aliya.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-146">
-          <caret line="73" column="29" selection-start-line="70" selection-start-column="53" selection-end-line="73" selection-end-column="29" />
+        <state relative-caret-position="17">
+          <caret line="205" column="22" selection-start-line="205" selection-start-column="22" selection-end-line="205" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/indexafterlogin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="53" column="58" selection-start-line="53" selection-start-column="58" selection-end-line="53" selection-end-column="58" />
+        <state relative-caret-position="478">
+          <caret line="219" column="0" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/worshipers.html">
+    <entry file="file://$PROJECT_DIR$/aliyot_calc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="81" column="66" selection-start-line="81" selection-start-column="66" selection-end-line="81" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/next_aliyot_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="123" column="81" selection-start-line="123" selection-start-column="81" selection-end-line="123" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/delete_worshiper.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="143" selection-end-column="81" />
+        <state relative-caret-position="470">
+          <caret line="195" column="12" selection-start-line="195" selection-start-column="12" selection-end-line="195" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskgabay.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="221">
+          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

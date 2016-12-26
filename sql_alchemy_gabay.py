@@ -39,7 +39,7 @@ class Worshipers(db.Model):
 
 class Aliyot(db.Model):
     __tablename__ = 'Aliyot'
-    id = db.Column('id', db.Integer, primary_key=True)
+    id = db.Column('id', db.Integer, primary_key=True,autoincrement=True)
     parasha = db.Column('parasha', db.Text)
     date = db.Column('date', db.Date)
     comment = db.Column('comment', db.String)
@@ -48,20 +48,20 @@ class Aliyot(db.Model):
     day = db.Column('day', db.String)
     reason = db.Column('reason', db.String)
 
-    def __init__(self, id=None, parasha=None, date=None, comment=None, aliya=None, worshiper=None, day=None, reason=None):
+    def __init__(self, parasha=None, date=None, comment=None, aliya=None, worshiper=None, day=None, reason=None):
 
-        self.id = id
+
         self.parasha = parasha
         self.date = date
         self.comment = comment
         self.aliya = aliya
         self.worshiper = worshiper
         self.day = day
-
+        self.reason = reason
 
 class Events(db.Model):
     __tablename__ = 'events'
-    id = db.Column('id', db.Integer, primary_key=True)
+    id = db.Column('id', db.Integer, primary_key=True,autoincrement=True)
     eventname = db.Column('eventname', db.String)
     worshiper = db.Column('worshiper', db.String)
     comment = db.Column('comment', db.String)
@@ -69,9 +69,8 @@ class Events(db.Model):
     date = db.Column('date', db.Date)
     moed = db.Column('Moed', db.String)
 
-    def __init__(self, id=None, eventname=None, worshiper=None, comment=None, day=None, date=None, moed=None):
+    def __init__(self,  eventname=None, worshiper=None, comment=None, day=None, date=None, moed=None):
 
-        self.id = id
         self.eventname = eventname
         self.worshiper = worshiper
         self.comment = comment
@@ -82,21 +81,21 @@ class Events(db.Model):
 
 class Donations(db.Model):
     __tablename__ = 'donations'
-    id = db.Column('id', db.Integer, primary_key=True)
+    id = db.Column('id', db.Integer, primary_key=True,autoincrement=True)
     worshiper = db.Column('donationdate', db.String)
     donationdate = db.Column('lastname', db.String)
     payed = db.Column('payed', db.String)
 
-    def __init__(self, id=None, worshiper=None, donationdate=None, payed=None):
-        self.id = id
+    def __init__(self,  worshiper=None, donationdate=None, payed=None):
+
         self.worshiper = worshiper
         self.donationdate = donationdate
         self.payed = payed
 
 
-class Yorziet(db.Model):
-    __tablename__ = 'yorziet'
-    id = db.Column('id', db.Integer, primary_key=True)
+class Yorzait(db.Model):
+    __tablename__ = 'yorzait'
+    id = db.Column('id', db.Integer, primary_key=True,autoincrement=True)
     worshiper = db.Column('worshiper', db.String)
     niftar = db.Column('niftar', db.String)
     date = db.Column('date', db.Date)
@@ -110,8 +109,9 @@ class Yorziet(db.Model):
         self.kinship = kinship
 
 class Users(db.Model):
+
      __tablename__ = 'users'
-     id = db.Column('id', db.Integer, primary_key=True)
+     id = db.Column('id', db.Integer, primary_key=True,autoincrement=True)
      username = db.Column('username', db.String)
      password = db.Column('password', db.String)
      lvl = db.Column('lvl', db.String)
@@ -122,13 +122,80 @@ class Users(db.Model):
         self.username = username
         self.password = password
         self.lvl = lvl
+#group table
+class Group(db.Model):
+    __tablename__ = 'group'
+    id = db.Column('id', db.Integer, primary_key=True,autoincrement=True)
+    worshiper = db.Column('worshiper', db.String)
+    head = db.Column('head', db.String)
+    connection = db.Column('connetion', db.String)
+
+    def __init__(self, id=None, worshiper=None, head=None,connection=None):
+        self.id = id
+        self.worshiper = worshiper
+        self.head = head
+        self. connection = connection
+
+class Moed(db.Model):
+
+     __tablename__ = 'moed'
+     name = db.Column('name', db.String, primary_key=True)
+
+     def __init__(self, name=None):
+         self.name = name
+
+
+#kindofevents table
+class KindOfEvent(db.Model):
+
+    __tablename__ = 'kindofevent'
+    name = db.Column('name', db.String, primary_key=True)
+
+    def __init__(self, name=None):
+        self.name = name
+
+#days table
+class Days(db.Model):
+    __tablename__ = 'days'
+    name = db.Column('name', db.String, primary_key=True)
+
+    def __init__(self, name=None):
+        self.name = name
+#aa
+class Reasons(db.Model):
+     __tablename__ = 'Reasons'
+     name = db.Column('name', db.String, primary_key=True)
+     rank= db.Column('rank', db.String)
+
+     def __init__(self, name=None,rank=None):
+         self.name = name
+         self.rank = rank
+#.
+class Parasha(db.Model):
+
+     __tablename__ = 'Parasha'
+     name = db.Column('name', db.String, primary_key=True)
+
+     def __init__(self, name=None):
+         self.name = name
+#s
+class KindOfAliya(db.Model):
+     __tablename__ = 'kindofaliya'
+     name = db.Column('name', db.String, primary_key=True)
+
+     def __init__(self, name=None):
+         self.name = name
+
+
 
 
 # #
 # new1=Worshipers()
 # new1.firstname = 'ori'
 # new1.lastname="moshe"
-#
+# db.session.query(Worshipers).filter(Worshipers.id == 227).\
+# update({Worshipers.firstname: "Yohssi"})
+# db.session.commit()
 # dates=datetime.date(day=5,month=10,year=1988)
 #
 # new1.lastaliya=dates
@@ -152,3 +219,8 @@ class Users(db.Model):
 # # db.session.commit()
 # a=Users.query.filter_by(lvl="admin").first()
 # print(a.username)
+# data=db.session.query(Events)
+#
+#
+# for i in data:
+#     print(i)

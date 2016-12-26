@@ -1,0 +1,239 @@
+
+<!DOCTYPE html >
+<head>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<title>הוספת מתפלל -בית כנסתAvratech  </title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='form_style.css') }}" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}" />
+	<script type="text/javascript" src="{{ url_for('static',filename='jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static',filename='jquery.dropotron-1.0.js') }}"></script>
+
+	<script type="text/javascript" src="{{ url_for('static',filename='jquery.slidertron-1.1.js') }}"></script>
+
+<script type="text/javascript">
+	$(function() {
+		$('#menu > ul').dropotron({
+			mode: 'fade',
+			globalOffsetY: 11,
+			offsetY: -15
+		});
+		$('#slider').slidertron({
+			viewerSelector: '.viewer',
+			indicatorSelector: '.indicator span',
+			reelSelector: '.reel',
+			slidesSelector: '.slide',
+			speed: 'slow',
+			advanceDelay: 4000
+		});
+	});
+</script>
+</head>
+
+
+
+
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#">בית כנסת אברטק</a></h1>
+		</div>
+		<div id="slogan">
+			<h2>פרויקט גמר</h2>
+		</div>
+	</div>
+	<div id="menu">
+		<ul>
+			<li class="first">
+				<span class="opener">מתפללים<b></b></span>
+				<ul>
+					<li><a href="/add_worshiper">הוסף מתפלל</a></li>
+					<li><a href="/update_worshiper">עדכן מתפלל</a></li>
+					<li><a href="/delete_worshiper">מחיקת מתפלל</a></li>
+					<li>
+						<span>פעולות<b></b></span>
+						<ul>
+							<li><a href="/table/worshipers">הצג טבלת מתפללים</a></li>
+							<li><a href="/next_aliyot_form">חישוב עליות</a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</li>
+								<li>
+				<span class="opener">עליות לתורה<b></b></span>
+				<ul>
+					<li><a href="/add_aliya">הוסף עליה</a></li>
+					<li><a href="/update_aliya">עדכן עליה</a></li>
+					<li><a href="/delete_aliya">הסר עליה</a></li>
+					<li>
+						<span>פעולות<b></b></span>
+						<ul>
+							<li><a href="/table/Aliyot">הצג טבלת עליות</a></li>
+							<li><a href="#">בקרוב</a></li>
+							<li><a href="#">בקרוב</a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</li>
+					<li><a href="#">בקרוב</a></li>
+				</ul>
+			</li>
+					<li><a href="#">בקרוב</a></li>
+				</ul>
+			</li>
+						<li>
+				<span class="opener">תרומות<b></b></span>
+				<ul>
+					<li><a href="/add_donation">הוסף תרומה</a></li>
+					<li><a href="/update_donation">עדכן תרומה</a></li>
+					<li><a href="/delete_donation">הסר תרומה</a></li>
+					<li>
+						<span>פעולות<b></b></span>
+						<ul>
+							<li><a href="/table/donations">הצג טבלת תרומות</a></li>
+							<li><a href="#">בקרוב</a></li>
+							<li><a href="#">בקרוב</a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</li>
+					<li><a href="#">בקרוב</a></li>
+				</ul>
+			</li>
+						<li>
+				<span class="opener">אירועים<b></b></span>
+				<ul>
+					<li><a href="/add_event">הוסף אירוע</a></li>
+					<li><a href="/update_event">עדכן אירוע</a></li>
+					<li><a href="/delete_event">הסר אירוע</a></li>
+					<li>
+						<span>פעולות<b></b></span>
+						<ul>
+							<li><a href="/table/events">הצג טבלת אירועים</a></li>
+							<li><a href="#">בקרוב</a></li>
+							<li><a href="#">בקרוב</a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</li>
+					<li><a href="#">בקרוב</a></li>
+				</ul>
+			</li>
+			<li>
+				<span class="opener">יורצייט<b></b></span>
+				<ul>
+					<li><a href="/add_yorzait">הוסף יורצייט</a></li>
+					<li><a href="/update_yorzait">עדכן יורצייט</a></li>
+					<li><a href="/delete_yorzait">הסר יורצייט</a></li>
+					<li>
+						<span>פעולות<b></b></span>
+						<ul>
+							<li><a href="/table/yorzait">הצג טבלת יורצייט</a></li>
+							<li><a href="#">בקרוב</a></li>
+							<li><a href="#">בקרוב</a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</li>
+					<li><a href="#">בקרוב</a></li>
+				</ul>
+			</li>
+						<li>
+				<span class="opener">נפטרים<b></b></span>
+				<ul>
+					<li><a href="/add_niftar">הוסף נפטר</a></li>
+					<li><a href="/update_niftar">עדכן נפטר</a></li>
+					<li><a href="/delete_niftar">הסר נפטר</a></li>
+					<li>
+						<span>פעולות<b></b></span>
+						<ul>
+							<li><a href="/table/niftarim">הצג טבלת נפטרים</a></li>
+							<li><a href="#">בקרוב</a></li>
+							<li><a href="#">בקרוב</a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</li>
+					<li><a href="#">בקרוב</a></li>
+				</ul>
+			</li>
+						<li>
+				<span class="opener">עליות לתורה<b></b></span>
+				<ul>
+					<li><a href="/add_aliya">הוסף עליה</a></li>
+					<li><a href="/update_aliya">עדכן עליה</a></li>
+					<li><a href="/delete_aliya">הסר עליה</a></li>
+					<li>
+						<span>פעולות<b></b></span>
+						<ul>
+							<li><a href="/table/Aliyot">הצג טבלת עליות</a></li>
+							<li><a href="#">בקרוב</a></li>
+							<li><a href="#">בקרוב</a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</li>
+					<li><a href="#">בקרוב</a></li>
+				</ul>
+			</li>
+		</ul>
+		<br class="clearfix" />
+	</div>
+	</div>
+		<form action="http://localhost:5000/Logout" method="post" class="dark-matter">
+			<div class="reel">
+			<div class="box" id="content-box2">
+				<h3>  {{ user }} ברוך הבא</h3>
+              <p><input type = "submit" value = "Logout" /></p>
+
+			</div>
+			</div>
+</form>
+
+<form action="http://localhost:5000/delete_worshiper" method="post" class="dark-matter">
+    <h1>הוספת מתפלל חדש
+        <span>אנא הזן את כל הפרטים</span>
+    </h1>
+    <label>
+        <span>שם פרטי</span>
+        <input id="{{ firstname }}" type="text" disabled name="{{ firstname }}" placeholder="{{ firstname }}" />
+    </label>
+	    <label>
+        <span> משפחה פרטי</span>
+        <input id="{{ lastname }}" type="text"  disabled name="{{ lastname }}" placeholder="{{ lastname }}"  />
+    </label>
+
+     <label>
+        <span>ID :</span><select name="id"  >
+		 {% for id in lstid %}
+        <option value="{{ id }}">{{ id }}</option>
+		  {% endfor %}
+
+        </select>
+    </label>
+               <input type="submit" name="submit" value="View" class="button">
+                <input type="submit" name="submit" value="Delete" class="button">
+
+
+          </form>
+
+
+
+
+
+
+
+
+
+
+
+
