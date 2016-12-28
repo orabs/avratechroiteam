@@ -3,7 +3,7 @@ import jewish
 import sqlite3
 from datetime import timedelta
 import random
-
+from xml.etree import ElementTree
 
 class Worshiper():
     def __init__(self, id, firstname, lastname, phone, city, addres, mail, clan, father_name,
@@ -188,28 +188,28 @@ def alioot(y, m, d):
     if len(list_random) > 4:
         clan[len(list_random)] = clan[8]
         q[len(list_random)] = q[8]
-    eroua = input(numb_of_aliot + ', you wont choos alia?')
-    while eroua != 'no':
-        type_aliah = input('איזה עליה אתה רוצה להעלות')
-        if type_aliah.isalpha() or int(type_aliah) not in list_olim:
-            eroua = input('אין עליה כזו, אתה עדיין רוצה לבחור עליה?')
-            continue
-
-
-        name = input('enter id_mtpallel')
-        clan_string = clan.pop(int(type_aliah))
-        clan[int(type_aliah)] = clan_string
-        if Worshiper.how_clan(int(name)) is None or Worshiper.how_clan(
-                int(name)) not in clan_string:
-            eroua = input('השם הנבחר או העליה אינם נכונים. רוצה בחירה אחרת?')
-            continue
-        list_olim.insert(int(type_aliah) - 1, (int(name), q[int(type_aliah)]))
-        list_olim.remove(int(type_aliah))
-        list_random.remove(int(type_aliah))
-        id_olim.append(int(name))
-        eroua = input('you have another event?')
-    if len(list_random) == 0:
-        return list_olim, date
+    # eroua = input(numb_of_aliot + ', you wont choos alia?')
+    # while eroua != 'no':
+    #     type_aliah = input('איזה עליה אתה רוצה להעלות')
+    #     if type_aliah.isalpha() or int(type_aliah) not in list_olim:
+    #         eroua = input('אין עליה כזו, אתה עדיין רוצה לבחור עליה?')
+    #         continue
+    #
+    #
+    #     name = input('enter id_mtpallel')
+    #     clan_string = clan.pop(int(type_aliah))
+    #     clan[int(type_aliah)] = clan_string
+    #     if Worshiper.how_clan(int(name)) is None or Worshiper.how_clan(
+    #             int(name)) not in clan_string:
+    #         eroua = input('השם הנבחר או העליה אינם נכונים. רוצה בחירה אחרת?')
+    #         continue
+    #     list_olim.insert(int(type_aliah) - 1, (int(name), q[int(type_aliah)]))
+    #     list_olim.remove(int(type_aliah))
+    #     list_random.remove(int(type_aliah))
+    #     id_olim.append(int(name))
+    #     eroua = input('you have another event?')
+    # if len(list_random) == 0:
+    #     return list_olim, date
     if 1 in list_olim:
         id = Worshiper.select_next_readers_clan(1, 'Cohen', id_olim)
         if id:

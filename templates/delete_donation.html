@@ -10,7 +10,7 @@
 	<script type="text/javascript" src="{{ url_for('static',filename='jquery.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static',filename='jquery.dropotron-1.0.js') }}"></script>
 
-	<script type="text/javascript" src="{{ url_for('static',filename='jquery.slidertron-1.1.js') }}"></script>
+
 
 <script type="text/javascript">
 	$(function() {
@@ -199,17 +199,21 @@
 			</div>
 </form>
 
-<form action="http://localhost:5000/delete_worshiper" method="post" class="dark-matter">
-    <h1>הוספת מתפלל חדש
+<form action="http://localhost:5000/delete_donation" method="post" class="dark-matter">
+    <h1>הסרת תרומה מהמערכת
         <span>אנא הזן את כל הפרטים</span>
     </h1>
     <label>
-        <span>שם פרטי</span>
-        <input id="{{ firstname }}" type="text" disabled name="{{ firstname }}" placeholder="{{ firstname }}" />
+        <span>שם התורם</span>
+        <input id="{{ worshiper }}" type="text" disabled name="{{ worshiper }}" value="{{ worshiper }}" />
     </label>
 	    <label>
-        <span> משפחה פרטי</span>
-        <input id="{{ lastname }}" type="text"  disabled name="{{ lastname }}" placeholder="{{ lastname }}"  />
+        <span> תאריך תרומה</span>
+        <input id="{{ donationdate }}" type="text"  disabled name="{{ donationdate }}" value="{{ donationdate }}"  />
+    </label>
+		    <label>
+        <span> סכום התרומה</span>
+        <input id="{{ donation }}" type="text"  disabled name="{{ donation }}" value="{{ donation }}"  />
     </label>
 
      <label>

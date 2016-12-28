@@ -115,8 +115,10 @@ def add_worshiper():
         return " המתפלל הוסף בהצלחה למערכת!! "
 
     elif request.method == "GET":
+        login = request.cookies.get('level')
 
-        return render_template("worshipers.html")
+        user = al.Users.query.filter_by(username=login).first().username
+        return render_template("worshipers.html",user=user)
 
 
 @app.route('/add_aliya', methods=['POST', 'GET'])
@@ -157,6 +159,7 @@ def add_aliya():
             lstaliya.append(aliya[0])
         print(lstworshiper)
         login = request.cookies.get('level')
+
         user = al.Users.query.filter_by(username=login).first().username
         return render_template("add_aliya.html",user=user,lstparasha=lstparasha,lstaliya=lstaliya,lstday=lstday,lstreason=lstreason,lstworshiper=lstworshiper)
 
@@ -165,17 +168,14 @@ def add_aliya():
 def add_event():
 
     if request.method == 'POST':
-        result = request.form
-        resdict = dict(result)
-        worshiper = resdict["worshiper"][0].split(",")
-        worshiper = worshiper[0]
-        comment = ((resdict["comment"][0]))
-        print(type(comment))
-        print(comment)
-        date = datetime.date(datetime.strptime((resdict["date"][0]), "%Y-%m-%d"))
-        event = al.Events(comment=comment, eventname=str(resdict["eventname"][0]), day=(resdict["day"][0]),
-                          date=date, moed=str(resdict["moed"][0]),
-                          worshiper=worshiper)
+
+        worshiper = request.form["worshiper"].split(",")
+
+        comment = ((request.form["comment"]))
+        date = datetime.date(datetime.strptime((request.form["date"]), "%Y-%m-%d"))
+        event = al.Events(comment=comment, eventname=str(request.form["eventname"]), day=(request.form["day"]),
+                          date=date, moed=str(request.form["moed"]),
+                          worshiper=worshiper[0])
 
         al.db.session.add(event)
         al.db.session.commit()
@@ -206,59 +206,89 @@ def add_event():
 @app.route('/add_donation', methods=['POST', 'GET'])
 def add_donation():
     if request.method == 'POST':
-        result = request.form
-        resdict = dict(result)
-        print(resdict)
-        print(type(resdict["firstname"]))
-        strdate = resdict["LastAliya"][0]
-        print(strdate)
-        print(type(strdate))
-        datedate = datetime.date(datetime.strptime(strdate, "%Y-%m-%d"))
-        print(datedate)
-        print(type(datedate))
-        worshiper = al.Worshipers(firstname=str(resdict["firstname"][0]), lastname=str(resdict["lastname"][0]),
-                                  phone=str(resdict["phone"][0]), city=str(resdict["city"][0]),
-                                  addres=str(resdict["addres"][0]), mail=str(resdict["mail"][0]),
-                                  clan=str(resdict["clan"][0]), father_name=str(resdict["father_name"][0]),
-                                  lastaliya=datedate)
-        print(resdict["LastAliya"][0])
-        print(type(resdict["LastAliya"][0]))
-        al.db.session.add(worshiper)
+        date = request.form["date"]
+        payed = request.form["payed"]
+        worshiper =str(request.form["worshiper"])
+        worshiper=worshiper.split(",")
+        # datedate = datetime.date(datetime.strptime(strdate, "%Y-%m-%d"))
+        print(request.form["date"])
+        print(type(request.form["payed"]))
+        print(request.form["donation"])
+        print(request.form["worshiper"])
+        print(worshiper[0])
+        donation = al.Donations(donationdate=str(request.form["date"]), payed=str(request.form["payed"]),worshiper=int(worshiper[0]), donation=int(request.form["donation"]))
+        al.db.session.add(donation)
         al.db.session.commit()
-
-        return " המתפלל הוסף בהצלחה למערכת!! "
+        return " התרומה הוספה בהצלחה למערכת!! "
 
     elif request.method == "GET":
-        return render_template("add_donation.html")
+        lstwor = []
+        lstid=[]
+        for worshiper in al.db.session.query(al.Donations.worshiper).all():
+            lstid.append(worshiper[0])
+        login = request.cookies.get('level')
+        user = al.Users.query.filter_by(username=login).first().username
+
+        for worshiper in lstid:
+            print(worshiper)
+            id=al.Worshipers.query.filter_by(id=int(worshiper)).first().id
+            print(id)
+            first= al.Worshipers.query.filter_by(id=worshiper).first().firstname
+            last=al.Worshipers.query.filter_by(id=worshiper).first().lastname
+            lstwor.append("{} ,{}, {}".format(id,first,last))
+
+        return render_template("add_donation.html",lstwor=lstwor,user=user,)
 
 
 @app.route('/add_yorzait', methods=['POST', 'GET'])
 def add_yorzait():
     if request.method == 'POST':
-        result = request.form
-        resdict = dict(result)
-        print(resdict)
-        print(type(resdict["firstname"]))
-        strdate = resdict["LastAliya"][0]
-        print(strdate)
-        print(type(strdate))
-        datedate = datetime.date(datetime.strptime(strdate, "%Y-%m-%d"))
-        print(datedate)
-        print(type(datedate))
-        worshiper = al.Worshipers(firstname=str(resdict["firstname"][0]), lastname=str(resdict["lastname"][0]),
-                                  phone=str(resdict["phone"][0]), city=str(resdict["city"][0]),
-                                  addres=str(resdict["addres"][0]), mail=str(resdict["mail"][0]),
-                                  clan=str(resdict["clan"][0]), father_name=str(resdict["father_name"][0]),
-                                  lastaliya=datedate)
-        print(resdict["LastAliya"][0])
-        print(type(resdict["LastAliya"][0]))
-        al.db.session.add(worshiper)
-        al.db.session.commit()
 
-        return " המתפלל הוסף בהצלחה למערכת!! "
+        worshiper =(request.form["worshiper"])
+        worshiper = worshiper.split(",")
+        niftar = (request.form["niftar"])
+        print(niftar[-1])
+        date = datetime.date(datetime.strptime(request.form["date"], "%Y-%m-%d"))
+
+
+        print(worshiper[0])
+        donation = al.Yorzait(date=date, kinship=str(request.form["kinship"]),worshiper=int(worshiper[0]), niftar=(int(niftar[-1])))
+        al.db.session.add(donation)
+        al.db.session.commit()
+        return " היורצייט הוסף בהצלחה למערכת!! "
 
     elif request.method == "GET":
-        return render_template("add_yorzait.html")
+        lstwor = []
+        lstid=[]
+        lstkinship=[]
+        lstniftar=[]
+        for worshiper in al.db.session.query(al.Donations.worshiper).all():
+            lstid.append(worshiper[0])
+        for kinship in al.db.session.query(al.KinshipType.name).all():
+            lstkinship.append(kinship[0])
+        for niftar in al.db.session.query(al.Niftarim.id).all():
+            print(niftar)
+            lstniftar.append(niftar[0])
+        login = request.cookies.get('level')
+        user = al.Users.query.filter_by(username=login).first().username
+
+        for worshiper in lstid:
+            print(worshiper)
+            id=al.Worshipers.query.filter_by(id=int(worshiper)).first().id
+            print(id)
+            first= al.Worshipers.query.filter_by(id=worshiper).first().firstname
+            last=al.Worshipers.query.filter_by(id=worshiper).first().lastname
+            lstwor.append("{} ,{}, {}".format(id,first,last))
+        lstniftar2=[]
+        for niftar in lstniftar:
+            print(niftar)
+            id = al.Niftarim.query.filter_by(id=int(niftar)).first().id
+            fathername = al.Niftarim.query.filter_by(id=int(niftar)).first().fathername
+            first = al.Niftarim.query.filter_by(id=int(niftar)).first().firstname
+            last = al.Niftarim.query.filter_by(id=int(niftar)).first().lastname
+            lstniftar2.append("{first}  {last} בן {father},{id}".format( id=id,first=first,last=last,father=fathername))
+
+        return render_template("add_yorzait.html",lstkinship=lstkinship,lstwor=lstwor,lstniftar=lstniftar2,user=user,)
 
 
 @app.route('/add_niftar', methods=['POST', 'GET'])
@@ -376,14 +406,13 @@ def update_worshiper():
 @app.route('/delete_worshiper', methods=['POST', 'GET'])
 def delete_worshiper():
     if request.method == 'POST':
-        if request.form['submit'] == 'View':
+        if request.form['submit']=="View":
             id = request.form["id"]
             firstname = (al.Worshipers.query.filter_by(id=id).first()).firstname
             lastname = (al.Worshipers.query.filter_by(id=id).first()).lastname
             print(lastname, firstname)
             print(id)
             print(type(id))
-
             return render_template("delete_worshiper.html", firstname=firstname, lastname=lastname, lstid=[id])
         if request.form['submit'] == 'Delete':
             id = request.form["id"]
@@ -397,8 +426,10 @@ def delete_worshiper():
 
 
     elif request.method == "GET":
-
+        lstfirst = []
+        lstlast = []
         lstid = []
+
         for id in al.db.session.query(al.Worshipers.id).all():
             lstid.append(id[0])
         login = request.cookies.get('level')
@@ -464,78 +495,80 @@ def delete_event():
     if request.method == 'POST':
         event= request.form["event"]
         event=(event.split(","))[0]
-        print(event)
-        print(type(event))
         event = al.Events.query.filter_by(id=int(event)).first()
-
-        print(type(event))
         al.db.session.delete(event)
         al.db.session.commit()
-    #     # main_def.Worshiper.delete_worshiper_by_id(id)
         return "האירוע נמחק בהצלחה!!!"
     elif request.method == "GET":
-
         lstevent=[]
         lstevent2=al.db.session.query(al.Events)
         for event in lstevent2:
             hebdate2=event.date
-            print(type(hebdate2))
             hebdate2=jewish.JewishDate.from_date(hebdate2)
             hebdate=eng_date_to_heb(hebdate2)
-            print(hebdate)
             lstevent.append(("{} , {} ,{} ,{} ,{} ,{}".format(event.id,event.eventname,event.worshiper,event.day,hebdate,event.moed)))
-
-
-
-        print(lstevent)
         login = request.cookies.get('level')
-        print(login)
         user = al.Users.query.filter_by(username=login).first()
-        print(user)
         return render_template("delete_event.html", lstevent=lstevent, user=user.username)
 
 
 @app.route('/delete_donation', methods=['POST', 'GET'])
 def delete_donation():
-    if request.method == 'POST':
-        id = request.form["id"]
-        firstname = (al.Worshipers.query.filter_by(id=id).first()).firstname
-        lastname = (al.Worshipers.query.filter_by(id=id).first()).lastname
-        print(lastname, firstname)
-        print(id)
-        print(type(id))
 
-        return render_template("delete_worshiper.html", firstname=firstname, lastname=lastname, lstid=[id])
-    if request.form['submit'] == 'Delete':
-        id = request.form["id"]
-        id2 = int(id)
-        worshiper = al.Worshipers.query.filter_by(id=id2).first()
-        print(worshiper.id)
-        al.db.session.delete(worshiper)
-        al.db.session.commit()
-        # main_def.Worshiper.delete_worshiper_by_id(id)
-        return "התרומה הוסרה בהצלחה"
+    if request.method == 'POST':
+        if request.form['submit']=='View':
+            id=request.form['id']
+            print(id)
+            worshiperid = (al.Donations.query.filter_by(id=int(id)).first()).worshiper
+            # print(worshiperid)
+            worshiper="afa"
+            worshiper=(((al.Worshipers.query.filter_by(id=(worshiperid)).first())))
+            worshiper="{first},{last}".format(first=worshiper.firstname,last=worshiper.lastname)
+            date=  (al.Donations.query.filter_by(id=int(id)).first()).donationdate
+            donation=  (al.Donations.query.filter_by(id=int(id)).first()).donation
+
+            return render_template("delete_donation.html",lstid=[id], worshiper=worshiper, donationdate=date,donation=donation)
+
+        if request.form['submit'] == 'Delete':
+
+            id = request.form["id"]
+            id2 = int(id)
+            print(id)
+            donation = al.Donations.query.filter_by(id=id2).first()
+            al.db.session.delete(donation)
+            al.db.session.commit()
+            # main_def.Worshiper.delete_worshiper_by_id(id)
+            return "התרומה הוסרה בהצלחה"
 
     elif request.method == "GET":
-        lstfirst = []
-        lstlast = []
+        lstdonation = []
+        lstdate = []
         lstid = []
-        database = sqlite3.connect('gabay')
-        for id in al.db.session.query(al.Worshipers.id).all():
+        lstwor=[]
+        lstid=[]
+        # for donation in al.db.session.query(al.Donations).all():
+        #     print(donation.id,donation.donation)
+        #     lstall.append(("{id} , {date} , {donation} , {worshiper} ".format(id=donation.id,worshiper=donation.worshiper,date=donation.donationdate,donation=donation.donation)))
+        #
+        # for donation in al.db.session.query(al.Donations.donation).all():
+        #     lstdonation.append(donation[0])
+        # for date in al.db.session.query(al.Donations.donationdate).all():
+        #     lstdate.append(date[0])
+        # for worshiper in al.db.session.query(al.Donations.worshiper).all():
+        #     lstwor.append(worshiper[0])
+        for id in al.db.session.query(al.Donations.id).all():
             lstid.append(id[0])
-        for first in al.db.session.query(al.Worshipers.id).all():
-            lstfirst.append(first[0])
-        for last in al.db.session.query(al.Worshipers.id).all():
-            lstlast.append(last[0])
         login = request.cookies.get('level')
-        print(login)
+
         user = al.Users.query.filter_by(username=login).first()
-        print(user)
+
         return render_template("delete_donation.html", lstid=lstid, user=user.username)
+
 
 
 @app.route('/delete_yorzait', methods=['POST', 'GET'])
 def delete_yorzait():
+
     if request.method == 'POST':
         id = request.form["id"]
         firstname = (al.Worshipers.query.filter_by(id=id).first()).firstname
@@ -548,7 +581,7 @@ def delete_yorzait():
     if request.form['submit'] == 'Delete':
         id = request.form["id"]
         id2 = int(id)
-        worshiper = al.Worshipers.query.filter_by(id=id2).first()
+        worshiper = al.Yorzait.query.filter_by(id=id2).first()
         print(worshiper.id)
         al.db.session.delete(worshiper)
         al.db.session.commit()
@@ -560,12 +593,12 @@ def delete_yorzait():
         lstfirst = []
         lstlast = []
         lstid = []
-        database = sqlite3.connect('gabay')
-        for id in al.db.session.query(al.Worshipers.id).all():
+
+        for id in al.db.session.query(al.Yorzait.id).all():
             lstid.append(id[0])
-        for first in al.db.session.query(al.Worshipers.id).all():
+        for first in al.db.session.query(al.Yorzait.date).all():
             lstfirst.append(first[0])
-        for last in al.db.session.query(al.Worshipers.id).all():
+        for last in al.db.session.query(al.Yorzait.worshiper).all():
             lstlast.append(last[0])
         login = request.cookies.get('level')
         print(login)

@@ -10,7 +10,7 @@
 	<script type="text/javascript" src="{{ url_for('static',filename='jquery.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static',filename='jquery.dropotron-1.0.js') }}"></script>
 
-	<script type="text/javascript" src="{{ url_for('static',filename='jquery.slidertron-1.1.js') }}"></script>
+
 
 <script type="text/javascript">
 	$(function() {
@@ -199,29 +199,30 @@
 			</div>
 </form>
 
-<form action="http://localhost:5000/delete_worshiper" method="post" class="dark-matter">
+<form action="http://localhost:5000/delete_worshiper" method="post" class="dark-matter" name="delete">
     <h1>הוספת מתפלל חדש
         <span>אנא הזן את כל הפרטים</span>
     </h1>
     <label>
         <span>שם פרטי</span>
-        <input id="{{ firstname }}" type="text" disabled name="{{ firstname }}" placeholder="{{ firstname }}" />
+        <input id="{{ firstname }}" type="text" disabled name="{{ firstname }}" value="{{ firstname }}" />
     </label>
 	    <label>
         <span> משפחה פרטי</span>
-        <input id="{{ lastname }}" type="text"  disabled name="{{ lastname }}" placeholder="{{ lastname }}"  />
+        <input id="{{ lastname }}" type="text"  disabled name="{{ lastname }}" value="{{ lastname }}" />
     </label>
 
      <label>
-        <span>ID :</span><select name="id"  >
+        <span>ID :</span><select name="id">
 		 {% for id in lstid %}
         <option value="{{ id }}">{{ id }}</option>
 		  {% endfor %}
 
         </select>
     </label>
-               <input type="submit" name="submit" value="View" class="button">
-                <input type="submit" name="submit" value="Delete" class="button">
+			<input type="submit" name="submit" value="View" class="button">
+			<input type="submit" name="submit" value="Delete" class="button">
+
 
 
           </form>

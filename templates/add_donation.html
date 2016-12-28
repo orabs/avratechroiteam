@@ -11,7 +11,7 @@
 <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}" />
 	<script type="text/javascript" src="{{ url_for('static',filename='jquery.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static',filename='jquery.dropotron-1.0.js') }}"></script>
-	<script type="text/javascript" src="{{ url_for('static',filename='jquery.slidertron-1.1.js') }}"></script>
+
 <script type="text/javascript">
 	$(function() {
 		$('#menu > ul').dropotron({
@@ -195,53 +195,32 @@
 				</div>
 			</div>
 		</div>
-<form action="http://localhost:5000/add_worshiper" method="post" class="dark-matter">
+<form action="http://localhost:5000/add_donation" method="post" class="dark-matter">
     <h1>הוספת מתפלל חדש
         <span>אנא הזן את כל הפרטים</span>
     </h1>
-    <label>
-        <span>שם פרטי</span>
-        <input id="firstname" type="text" name="firstname" placeholder="שם פרטי" />
-    </label>
-
-    <label>
-        <span>שם משפחה</span>
-        <input id="lastname" type="text" name="lastname" placeholder="משפחה" />
-    </label>
-	    <label>
-        <span>טלפון :</span>
-        <input id="phone" type="text" name="phone" placeholder="טלפון" />
-    </label>
-	    <label>
-        <span>עיר</span>
-        <input id="city" type="text" name="city" placeholder="עיר" />
-    </label>
-		    <label>
-        <span>כתובת</span>
-        <input id="addres" type="text" name="addres" placeholder="כתובת" />
-    </label>
-		    <label>
-        <span>Mail</span>
-        <input id="mail" type="email" name="mail" placeholder="Mail" />
-    </label>
-
-    <label>
-        <span>שם האב :</span>
-        <input id="father_name" type="text" name="father_name" placeholder="שם האב" />
-    </label>
-	    <label>
-        <span>תאריך עליה אחרון :</span>
-        <input id="LastAliya" type="date" name="LastAliya" placeholder="תאריך עליה אחרון" />
-    </label>
      <label>
-        <span>ייחוס :</span><select name="clan">
-        <option value="Cohen">כהן</option>
-        <option value="Levi">לוי</option>
-		  <option value="Israel">ישראל</option>
+        <span>מתפלל :</span><select name="worshiper">
+		 {% for worshiper in lstwor %}
+        <option value="{{ worshiper }}">{{ worshiper }}</option>
+		  {% endfor %}
+
         </select>
     </label>
-     <label>
-        <span>&nbsp;</span>
+
+    <label>
+        <span>תאריך התרומה</span>
+        <input id="date" type="date"  required name="date" placeholder="תאריך תרומה" />
+    </label>
+	    <label>
+        <span>סכום התרומה:</span>
+        <input id="donation" type="number" required name="donation" placeholder="סכום" />
+    </label>
+	    <label>
+        <span>האם שולם?</span>
+        <input id="payed" type="checkbox"  name="payed" placeholder="האם שולם" />
+    </label>
+
         <input type="submit" class="button" value="submit" />
     </label>
 

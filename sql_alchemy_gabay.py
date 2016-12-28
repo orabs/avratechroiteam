@@ -82,16 +82,17 @@ class Events(db.Model):
 class Donations(db.Model):
     __tablename__ = 'donations'
     id = db.Column('id', db.Integer, primary_key=True,autoincrement=True)
-    worshiper = db.Column('donationdate', db.String)
-    donationdate = db.Column('lastname', db.String)
+    worshiper = db.Column('worshiper', db.String)
+    donation = db.Column('donation', db.Integer)
+    donationdate = db.Column('donationdate', db.String)
     payed = db.Column('payed', db.String)
 
-    def __init__(self,  worshiper=None, donationdate=None, payed=None):
+    def __init__(self,  worshiper=None, donationdate=None, payed=None,donation=None):
 
         self.worshiper = worshiper
         self.donationdate = donationdate
         self.payed = payed
-
+        self.donation=donation
 
 class Yorzait(db.Model):
     __tablename__ = 'yorzait'
@@ -107,6 +108,21 @@ class Yorzait(db.Model):
         self.niftar = niftar
         self.date = date
         self.kinship = kinship
+#
+class Niftarim(db.Model):
+    __tablename__ = 'niftarim'
+    id = db.Column('id', db.Integer, primary_key=True,autoincrement=True)
+    firstname = db.Column('firstname', db.String)
+    lastname = db.Column('lastname', db.String)
+    fathername = db.Column('fathername', db.String)
+    deathdate = db.Column('deathdate', db.Date)
+
+    def __init__(self, id=None, firstname=None, lastname=None, fathername=None, deathdate=None):
+
+        self.firstname = firstname
+        self.lastname = lastname
+        self.fathername = fathername
+        self.deathdate = deathdate
 
 class Users(db.Model):
 
@@ -185,6 +201,13 @@ class KindOfAliya(db.Model):
 
      def __init__(self, name=None):
          self.name = name
+#S
+class KinshipType(db.Model):
+    __tablename__ = 'kinshiptype'
+    name = db.Column('name', db.String, primary_key=True)
+
+    def __init__(self, name=None):
+        self.name = name
 
 
 
@@ -224,3 +247,8 @@ class KindOfAliya(db.Model):
 #
 # for i in data:
 #     print(i)
+
+
+
+# Worshipers.delete_worshiper_by_id(233)
+# db.session.commit()
